@@ -8,8 +8,9 @@ public class Movie {
         myRating = this.rating;
     }
     public Movie(String myTitle, String myStudio){
-        myTitle = this.title;
-        myStudio = this.studio;
+        title = myTitle;
+        studio = myStudio;
+        rating = "PG";
     }
 
 }
