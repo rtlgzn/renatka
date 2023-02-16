@@ -1,18 +1,27 @@
 public class Student {
-    String name;
-    String surname;
-    String address;
-    int id;
+    private String name;
+    private int id;
+    private int yearOfStudy;
 
-    public Student(String name, String surname, String address, int id) {
+    public Student(String name, int id) {
         this.name = name;
-        this.surname = surname;
-        this.address = address;
         this.id = id;
+        this.yearOfStudy = 1;
     }
 
+    public String getName() {
+        return name;
+    }
 
-    public String toString() {
-        return String.format("Студент: %s %s, адрес: %s, ID: %d", name, surname, address, id);
+    public int getId() {
+        return id;
+    }
+
+    public int getYearOfStudy() {
+        return yearOfStudy;
+    }
+
+    public void incrementYearOfStudy() {
+        yearOfStudy++;
     }
 }
