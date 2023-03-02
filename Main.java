@@ -5,25 +5,16 @@ public class Main {
 
     public static void main(String[] args) {
 
-        //задача 1
-        for (Colors color : Colors.values()) {
-            System.out.println(color);
+        //задача 4
+        ArrayList<Student> students = new ArrayList<>();
+        students.add(new Student(5));
+        students.add(new Student(3));
+        students.add(new Student(4));
+
+        for (Student student : students) {
+            System.out.println(student.getGrade());
         }
 
-        //задача 2
-        for (Weekday day : Weekday.values()) {
-            printMessage(day);
-        }
-    }
-
-    public static void printMessage(Weekday day) {
-        String message = "Today is " + day + ". ";
-        if (day.isWeekDay()) {
-            message += "It's a weekday.";
-        } else {
-            message += "It's a holiday.";
-        }
-        System.out.println(message);
     }
 }
 
